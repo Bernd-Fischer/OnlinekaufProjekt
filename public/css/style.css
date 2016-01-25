@@ -1,0 +1,309 @@
+#logbody {
+
+
+}
+
+.welcomeframe {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	position: absolute;
+	background-color: hsla(210, 100%, 30%, 0.8);
+	left: 20%;
+	top: 10%;
+	width: 40%;
+	height: 20%;
+	box-shadow: 10px 10px 10px grey;
+	border-radius: 20px;	
+	border-color: grey;
+	border-width: 1px;
+	border-style: solid;	
+	
+}
+
+#logframe {
+	position: absolute;
+	background-color: hsla(210, 100%, 30%, 0.8);
+	left: 20%;
+	top: 35%;
+	width: 40%;
+	height: 50%;
+	box-shadow: 10px 10px 10px grey;
+	border-radius: 20px;	
+	border-color: grey;
+	border-width: 1px;
+	border-style: solid;	
+	
+}
+
+.logsite {
+	float:left;
+	width:47%;
+	height:100%;
+
+}
+
+button {
+  color:#06F;
+  font-weight: bold;
+  font-size: 10	0%;
+  text-transform: uppercase;
+}
+
+
+#kopfbereich {
+	background: linear-gradient(to bottom, #00c2e5 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%); 
+	height:10%;
+	width:100%;
+	border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	padding-bottom:35px;
+}
+
+#infoleiste {
+	height:3%;
+	width:auto;
+	border-radius: 15px;
+	text-align:right;
+	font-family:Arial, Helvetica, sans-serif;
+	background: yellow;
+	padding-left:20px; 
+	padding-top:5px;
+	padding-right:5px;
+	font-size:20px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+
+#regis {
+	width:100%;
+	height:25%;
+	line-height:50px;
+	text-align:right;
+	background-image:url(../pic/regispic.jpg);
+	background-size:100%;	
+	border-radius: 20px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#inhalt {
+  background-color: white;
+  min-height: 100%;
+  left:11%;
+  margin-left:10%;
+  width: auto;
+  border-width: 2px;
+
+}
+
+.inhaltdatenkurz {
+  background: linear-gradient(to bottom, #00c2e5 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%);
+  border-radius: 10px;
+  width: 40%;
+  height:40%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+  padding:20px; 
+  margin:10px;
+  float:left;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.inhaltdatenlang {
+  background: linear-gradient(to bottom, #00c2e5 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%);
+  border-radius: 10px;
+  width: 85%;
+  height:10%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+  padding:20px; 
+  margin:10px;
+  float:left;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.gesamtframe {
+	float:right;
+	height:30%;
+	width:20%;
+	background-color:yellow;
+	border-width: 1px;
+    border-style: solid;
+	border-radius: 10px;
+	margin-top:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+.gesamtframe h1 {
+	text-align:center;
+	
+}
+
+.suchobjektleiste {
+  border-radius: 10px;
+  width: 20%;
+  height:35%;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top:10px;
+  margin-right:10px;
+  border-width: 1px;
+  border-style: solid;
+  
+  padding:15px;
+  float:left;
+  text-align:center;
+
+}
+
+.gesamtframe p {
+	padding-left:15px;
+	font-size:22px;
+}
+
+.inhaltdatenlangflach {
+  background: linear-gradient(to bottom, #00c2e5 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%);
+  border-radius: 10px;
+  width: 97%;
+  height:3%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+  padding:20px; 
+  margin-left:10px;
+  margin-top:10px;
+  float:left;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.umsatzbalkengrun {
+
+  border-radius: 10px;
+  width: 97%;
+  height:1,5%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+  padding:10px; 
+  margin-left:10px;
+  margin-top:10px;
+  float:left;
+  border-width: 2px;
+  border-style: solid;
+  border-color:red;
+}
+
+.umsatzbalkenrot {
+ 	
+  border-radius: 10px;
+  width: 97%;
+  height:1,5%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+  padding:10px; 
+  margin-left:10px;
+  margin-top:10px;
+  float:left;
+  border-width: 2px;
+  border-style: solid;
+  border-color:green;
+}
+
+.inhaltdatenlangflach form {
+	
+	line-height:1;
+	padding-left:90px;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	
+}
+
+.suchliste {
+	height:88%;
+	width:78%;
+	float:left;
+	margin:10px;
+}
+
+#tabellenebersicht{
+  margin-left:10px;
+  width:99%;
+  text-align:center;
+}
+
+.tabellenebersicht th {
+	font-size:25px;
+}
+
+
+#steuerung {
+  float: left;
+  width: 10%;
+  min-height: 100%; 
+}
+
+
+ 
+#steuerung li {
+	list-style: none;
+   background: linear-gradient(to bottom, #00c2e5 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%);   
+   border-radius: 10px;
+   text-align:center;
+   
+   margin-top: 10px;              
+   padding-top: 8px;              
+   padding-bottom: 8px;           
+   padding-left: 8px;             
+   padding-right: 8px;    
+   font-size:20px;     
+   font-weight:bold;	
+   font-family:Arial, Helvetica, sans-serif;
+   text-decoration: none; 
+   border-width: 1px;
+   border-style: solid;  
+} 
+
+#tabbild {
+	width:100px;
+	height:100px;	
+}
+
+#alertdiv {
+	width:70%;	
+	height:70%;
+   background: #000;   
+   border-radius: 10px;
+   text-align:center;
+   position:absolute;
+	left:300px;
+	top:200px;
+	border:#F00;
+	border-width:7px;
+	border-style:solid;
+	
+	font-size:40px;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	padding:20px;
+	visibility:hidden;
+}
+
+#steuerung a:link    { color:black;}
+#steuerung a:visited { color:black;}
+#steuerung a:focus   { color:black;}
+#steuerung a:hover   { color:black;}
+#steuerung a:active  { color:black;}
+
+.raw {
+  background-color: #0f0f0f;
+}
+
+
