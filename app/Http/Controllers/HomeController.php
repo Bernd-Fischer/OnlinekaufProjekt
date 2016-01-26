@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Ware;
+use App\Gekauft;
 
 class HomeController extends Controller
 {
@@ -24,11 +28,41 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('login');
     }
 
     public function einkauf()
     {
-        return view('einkauf');
+        $ware = Ware::all();
+
+        return view('einkauf', compact('ware'));
+
     }
+
+    public function uebersicht()
+    {
+        $gekauft = Gekauft::all();
+
+        return view('uebersicht', compact('gekauft'));
+
+
+    }
+
+    public function aufladen()
+    {
+        return view('aufladen');
+    }
+
+    public function profil()
+    {
+        return view('profil');
+    }
+
+    public function umsaetze()
+    {
+        return view('umsaetze');
+    }
+
+
+
 }

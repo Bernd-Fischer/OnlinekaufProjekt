@@ -2,34 +2,6 @@
 
 /*
 |--------------------------------------------------------------------------
-| Routes File
-|--------------------------------------------------------------------------
-|
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-Route::get('/', 'PageController@index');
-
-Route::get('/aufladen', 'PageController@aufladen');
-
-//Route::get('/einkauf', 'PageController@einkauf');
-
-Route::get('/profil', 'PageController@profil');
-
-Route::get('/uebersicht', 'PageController@uebersicht');
-
-Route::get('/umsaetze', 'PageController@umsaetze');
-
-Route::get('/test', 'PageController@test');
-
-
-
-
-/*
-|--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 |
@@ -43,11 +15,38 @@ Route::group(['middleware' => ['web']], function () {
     //
     Route::auth();
 
+    Route::get('/', 'HomeController@uebersicht');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@uebersicht');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/aufladen', 'HomeController@aufladen');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+
+
     Route::get('/einkauf', 'HomeController@einkauf');
 });
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/home', 'HomeController@index');
+    Route::get('/profil', 'HomeController@profil');
 });
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/umsaetze', 'HomeController@umsaetze');
+});
+
